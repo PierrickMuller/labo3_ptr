@@ -54,9 +54,11 @@
 \usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm, showframe=false]{geometry}
 \usepackage{amsmath}
 \usepackage{hyperref}
+\usepackage{float}
 \usepackage{pdfpages}
 \usepackage{color}
 \usepackage{caption}
+\usepackage{subcaption}
 \usepackage[framed,numbered,autolinebreaks]{lib/mcode}
 
 % fichier avec les constantes (à adapter pour les étudiants)
@@ -95,11 +97,15 @@
 	%\section{Conclusion}
 	% les méthodologies présentée ci-dessus est une bonne approche pour les petits projets qui ne demandent pas beaucoup de documentation mais n'est pas adaptée à des gros projets où plusieurs personnes vont rédiger de la documentation (Utilisation de git)
 	% En modifiant les documents depuis deux endroits différents, si vous répartissez le travail par "thème", chacun va modifier un document et à la fin il suffira de merge ensemble les changements
+	\tableofcontents
+
+	\newpage
+
 	\input{chapitres/Introduction.tex}
 	\input{chapitres/AnalyseEtConception}
 	\input{chapitres/RealisationEtImplementation.tex}
-	\input{chapitres/Simulation.tex}
-	\input{chapitres/Conclusion.tex}
+	%\input{chapitres/Simulation.tex}
+	%\input{chapitres/Conclusion.tex}
 
 	%Section pour la signature
 	\section{Signatures}
@@ -109,6 +115,7 @@
       \nomAuteur
     \end{center}
 
+	\listoffigures
 	% si des annexes sont nécessaires ajouter :
 	% \section{Annexes}
 	% Changement de notation en lettre :
