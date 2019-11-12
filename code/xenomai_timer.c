@@ -47,7 +47,6 @@ void periodicTimer(void *arg)
         
 	        rt_printf("%ld\n",(now - previous));
                 previous = now;
-		counter++;
         }
 	exit(0);
 }
